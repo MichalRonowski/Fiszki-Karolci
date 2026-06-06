@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Fiszki Karolci</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card-stage" aria-label="Pojedyncza fiszka">
+      <div class="flashcard" id="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Kliknij, aby odwrócić fiszkę">
+        <div class="flashcard__inner">
+          <article class="flashcard__face flashcard__face--front">
+            <p class="flashcard__label">Pytanie</p>
+            <h1 class="flashcard__content">Jak po angielsku jest „kot”?</h1>
+            <p class="flashcard__hint">Kliknij, aby zobaczyć odpowiedź</p>
+          </article>
+          <article class="flashcard__face flashcard__face--back">
+            <p class="flashcard__label">Odpowiedź</p>
+            <h1 class="flashcard__content">Cat</h1>
+            <p class="flashcard__hint">Kliknij ponownie, aby wrócić</p>
+          </article>
+        </div>
+      </div>
+      <div class="flashcard-controls" aria-label="Nawigacja fiszek">
+        <button class="control-button" id="prevBtn" type="button">Poprzednia</button>
+        <button class="control-button control-button--primary" id="nextBtn" type="button">Następna</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
